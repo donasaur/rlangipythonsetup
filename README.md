@@ -1,10 +1,10 @@
 # Setting up R interpreter in Notebook<br />
 <br />
-You will need to have the following installed<br />
-- Python<br />
-- R<br />
-- IPython, and notebook<br />
-<br />
+You will need to have the following installed:<br />
+- Python
+- R
+- IPython, and notebook
+
 Download and install R here:<br />
 http://cran.r-project.org/bin<br />
 <br />
@@ -49,13 +49,13 @@ To run the R Interpreter in IPython's notebook app, just type:<br />
 ```
 <br />
 When you create a new notebook, writing a series of R commands, such as:<br />
-*X <- c(0,1,2,3,4)
-*Y <- c(3,5,4,6,7)
-*XYlm = lm(Y~X)
-*XYcoef = coef(XYlm)
-*print(summary(XYlm))
-*par(mfrow=c(2,2))
-*plot(XYlm)
+&nbsp;&nbsp;&nbsp;&nbsp;X <- c(0,1,2,3,4)<br />
+&nbsp;&nbsp;&nbsp;&nbsp;Y <- c(3,5,4,6,7)<br />
+&nbsp;&nbsp;&nbsp;&nbsp;XYlm = lm(Y~X)<br />
+&nbsp;&nbsp;&nbsp;&nbsp;XYcoef = coef(XYlm)<br />
+&nbsp;&nbsp;&nbsp;&nbsp;print(summary(XYlm))<br />
+&nbsp;&nbsp;&nbsp;&nbsp;par(mfrow=c(2,2))<br />
+&nbsp;&nbsp;&nbsp;&nbsp;plot(XYlm)<br />
 should result in the commands getting executed as they would in a standard R interpreter. Congrats!<br />
 <br />
 Note: to run the regular Python interpreter (and not R) in notebook instead, just run:<br />
