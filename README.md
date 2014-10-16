@@ -15,9 +15,9 @@ Now, you will also need to install the rpy2 resource package.<br />
 <br />
 **Mac OS/Linux specific instructions to get rpy2:**<br />
 Type the following:<br />
-```<br />
-pip install rpy2<br />
-```<br />
+```shell
+pip install rpy2
+```
 If you don't have pip installed (try typing pip at the terminal to test if you have it installed), get it! It's a very useful command that can be used to install various Python packages<br />
 <br />
 **Windows specific instructions to get rpy2:**<br />
@@ -33,9 +33,9 @@ Unzip the files.<br />
 **Mac OS/Linux specific instructions to set up rkernel.py:**<br />
 cd to the directory you unzipped the files via terminal.<br />
 Type:<br />
-```<br />
-  bash setup_rkernel_maclinux.sh<br />
-```<br />
+```shell
+  bash setup_rkernel_maclinux.sh
+```
 <br />
 **Windows specific instructions to set up rkernel.py:**<br />
 Double-click on setup_rkernel_win.bat. It will prompt you for administrator access privileges. Click yes: these privileges are required to set the R_HOME and R_USER system environment variables that rpy2 needs in order to run properly. After that, follow the instructions as prompted by the command-line that opens up.<br />
@@ -44,25 +44,23 @@ Double-click on setup_rkernel_win.bat. It will prompt you for administrator acce
 If you don't see rkernel.py in the current directory anymore, that means that the script ran successfully!<br />
 <br />
 To run the R Interpreter in IPython's notebook app, just type:<br />
-```<br />
-  ipython notebook --profile rkernel<br />
-```<br />
+```shell
+  ipython notebook --profile rkernel
+```
 <br />
 When you create a new notebook, writing a series of R commands, such as:<br />
-```<br />
-  X <- c(0,1,2,3,4)<br />
-  Y <- c(3,5,4,6,7)<br />
-  XYlm = lm(Y~X)<br />
-  XYcoef = coef(XYlm)<br />
-  print(summary(XYlm))<br />
-  par(mfrow=c(2,2))<br />
-  plot(XYlm)<br />
-```<br />
+*X <- c(0,1,2,3,4)
+*Y <- c(3,5,4,6,7)
+*XYlm = lm(Y~X)
+*XYcoef = coef(XYlm)
+*print(summary(XYlm))
+*par(mfrow=c(2,2))
+*plot(XYlm)
 should result in the commands getting executed as they would in a standard R interpreter. Congrats!<br />
 <br />
 Note: to run the regular Python interpreter (and not R) in notebook instead, just run:<br />
-```<br />
-  ipython notebook<br />
-```<br />
+```shell
+  ipython notebook
+```
 <br />
 This guide was based off Fernando Perez's "hack" to convert a Python interpreter session into a R interpreter session by prepending "%%R" prior to ea. command getting run<br />
